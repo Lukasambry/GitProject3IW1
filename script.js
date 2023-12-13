@@ -24,7 +24,7 @@ function gestionnaireDeTaches() {
 
     function marquerTacheComplete(index) {
         if (index > 0 && index <= taches.length) {
-            tacheComplete[index] = true;
+            tacheComplete = true;
         }
     }
 
