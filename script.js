@@ -4,7 +4,9 @@ function gestionnaireDeTaches() {
 
     function ajouterTache(tache) {
         if (tache != null) {
+            if(tache != ""){
             taches.push(tache);
+            }
         }
     }
 
