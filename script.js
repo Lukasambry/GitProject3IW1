@@ -3,10 +3,8 @@ function gestionnaireDeTaches() {
     let tacheComplete = false;
 
     function ajouterTache(tache) {
-        if (tache != null) {
-            if(tache != ""){
+        if (tache != null && tache != "") {
             taches.push(tache);
-            }
         }
     }
 
