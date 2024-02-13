@@ -9,10 +9,7 @@ function gestionnaireDeTaches() {
     }
 
     function supprimerTache(index) {
-        let adjustedIndex = index - 1;
-        if (adjustedIndex >= 0 && adjustedIndex < taches.length) {
-            taches.splice(adjustedIndex, 1);
-        }
+        taches.splice(index, 1);
     }
     
 
