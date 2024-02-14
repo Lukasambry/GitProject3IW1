@@ -1,0 +1,42 @@
+{
+  "name": "gitproject3iw1",
+  "version": "1.0.0",
+  "description": "Projet de groupe à l'ESGI pour la classe 3IW1 en versionning Git par M.Hermiteau",
+  "main": "script.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{html,css,less,ejs}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lukasambry/GitProject3IW1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lukasambry/GitProject3IW1/issues"
+  },
+  "homepage": "https://github.com/Lukasambry/GitProject3IW1#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5"
+  }
+}
