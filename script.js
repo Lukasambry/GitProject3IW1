@@ -8,6 +8,10 @@ function gestionnaireDeTaches() {
         }
     }
 
+    function resetTaches() {
+        tacheComplete = ""; 
+    }
+
     function supprimerTache(index) {
         let adjustedIndex = index - 1;
         if (adjustedIndex >= 0 && adjustedIndex < taches.length) {
