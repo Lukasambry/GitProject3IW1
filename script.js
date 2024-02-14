@@ -17,7 +17,7 @@ function gestionnaireDeTaches() {
     
 
     function afficherTaches() {
-        for (i = 0; i < taches.length; i++) {
+        for (let i = 0; i < taches.length; i++) {
             console.log(i + " - " + taches[i]);
         }
     }
