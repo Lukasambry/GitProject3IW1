@@ -2,6 +2,7 @@ function gestionnaireDeTaches() {
     let taches = ["faire les courses", "nettoyer la maison", "promener le chien"];
     let tacheComplete = false;
 
+    // Permet d'ajouter une tâche à la liste
     function ajouterTache(tache) {
         if (tache != null && tache != "") {
             taches.push(tache);
