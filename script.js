@@ -28,8 +28,10 @@ function gestionnaireDeTaches() {
     }
 
     function marquerTacheComplete(index) {
-        if (index > 0 && index <= taches.length) {
+        let adjustedIndex = index - 1;
+        if (adjustedIndex >= 0 && adjustedIndex < taches.length) {
             tacheComplete = true;
+            console.log("La tâche " + taches[adjustedIndex] + " est complétée");
         }
     }
 
